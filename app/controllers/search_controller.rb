@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    @stations = AltFuelStationService.new(zipcode).*method TBD*
+    @stations = Station.find(params['q'])
   end
 end
