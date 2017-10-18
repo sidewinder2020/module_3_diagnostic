@@ -16,7 +16,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'pry'
   gem 'capybara'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'byebug'
 end
 
