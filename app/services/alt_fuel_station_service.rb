@@ -9,7 +9,7 @@ class AltFuelStationService
 
   def find_by_zipcode(zipcode)
     response = @conn.get("nearest.json?location=#{zipcode}&radius=6&fuel_type=ELEC,LPG")
-    JSON.parse(response.body)
+    JSON.parse(response.body, symbolize_names: true)
   end
   #put all of the params in the endpoint, IF POSSIBLE - note: check available endpoints
   private

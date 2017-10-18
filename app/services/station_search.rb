@@ -12,7 +12,7 @@ class StationSearch
   private
 
     def raw_stations
-      raw_stations = AltFuelStationService.new.find_by_zipcode(zipcode)["fuel_stations"]
+      raw_stations = AltFuelStationService.new.find_by_zipcode(zipcode)[:fuel_stations]
     end
 
     attr_reader :zipcode
