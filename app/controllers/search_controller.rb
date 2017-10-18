@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    @stations = Zipcode.find(params['q'])
+    @stations = StationSearch.new(params['q']).station
   end
 end
