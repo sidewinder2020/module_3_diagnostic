@@ -12,7 +12,6 @@ class StationSearch
   private
 
     def raw_stations
-      binding.pry
       raw_stations = AltFuelStationService.new.find_by_zipcode(zipcode)["fuel_stations"]
     end
 

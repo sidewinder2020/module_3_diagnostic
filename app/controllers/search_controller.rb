@@ -1,5 +1,6 @@
 class SearchController < ApplicationController
   def index
-    @stations = StationSearch.new(params['q'].to_i).stations
+    binding.pry
+    @stations = StationSearch.new(params['q']).stations
   end
 end
